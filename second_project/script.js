@@ -59,12 +59,18 @@
 //     console.log("not positive")
 // }
 
-var b= 100;
-if (b>99)
-    console.log("three digit no.")
-else{
-    console.log("two digit no.")
-}
+// var b= 100;
+// if (b>99)
+//     console.log("three digit no.")
+// else{
+//     console.log("two digit no.")
+// }
+
+//asynchronous/// 
+
+setTimeout(function(){
+    console.log("asynchronous")  // all tasks started same time but execute different.
+},6000)                          //Callback function
 
 
 
