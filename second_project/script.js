@@ -66,14 +66,35 @@
 //     console.log("two digit no.")
 // }
 
-//asynchronous/// 
+//asynchronous//
 
-setTimeout(function(){
-    console.log("asynchronous")  // all tasks started same time but execute different.
-},6000)                          //Callback function
+// console.log("hello world") //synchronous 
+
+ 
+// setTimeout(function(){
+//     console.log("asynchronous")  // all tasks started same time but execute different.
+// },6000)                          //Callback function
 
 
+//Promise
 
+var ans = new Promise((res,rej)=>{
+    if(true){
+        return res();
+
+    }
+    else{
+        return rej();
+
+    }
+})
+ans
+.then(function(){
+    console.log("resolve hogya")
+})
+.catch(function(){
+    console.log("reject hogya tha")
+})
 
 
 
